@@ -4,7 +4,7 @@
 
   /* Estilos para la barra de navegación */
 mat-toolbar {
-  background-color: #1976D2; /* Color de fondo */
+  background-color: #1a2835; /* Color de fondo */
   color: white; /* Color del texto */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12); /* Sombra */
 }

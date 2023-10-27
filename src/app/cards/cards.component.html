@@ -1,0 +1,20 @@
+<!--<h1>Detalles de la Carrera</h1>
+<button (click)="getRace()">Obtener Carrera</button>
+<div *ngIf="raceInfo">
+  <h2>{{ raceInfo.RaceName }}</h2>
+  <p>Fecha de la carrera: {{ raceInfo.date }}</p>
+  <p>Nombre del Circuito: {{ raceInfo.Circuit.circuitName }}</p>
+  <p>Nombre del Piloto: {{ raceInfo.Results[0].Driver.givenName }} {{ raceInfo.Results[0].Driver.familyName }}</p>
+</div>-->
+
+<h1>Resultados de la Carrera</h1>
+<button (click)="getRace()">Obtener Carrera</button>
+<div *ngIf="raceResults.length > 0">
+  <ol>
+    <li *ngFor="let result of raceResults">
+      <p>Piloto: {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
+      <p>Constructor: {{ result.Constructor.name }}</p>
+      <p>Puntos: {{ result.points }}</p>
+    </li>
+  </ol>
+</div>

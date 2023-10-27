@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardsComponent } from './cards/cards.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Material
@@ -15,6 +16,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -23,7 +26,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AppComponent,
     HomeComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
