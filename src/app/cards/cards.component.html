@@ -1,20 +1,62 @@
-<!--<h1>Detalles de la Carrera</h1>
-<button (click)="getRace()">Obtener Carrera</button>
-<div *ngIf="raceInfo">
-  <h2>{{ raceInfo.RaceName }}</h2>
-  <p>Fecha de la carrera: {{ raceInfo.date }}</p>
-  <p>Nombre del Circuito: {{ raceInfo.Circuit.circuitName }}</p>
-  <p>Nombre del Piloto: {{ raceInfo.Results[0].Driver.givenName }} {{ raceInfo.Results[0].Driver.familyName }}</p>
-</div>-->
-
-<h1>Resultados de la Carrera</h1>
-<button (click)="getRace()">Obtener Carrera</button>
+<!--
 <div *ngIf="raceResults.length > 0">
-  <ol>
-    <li *ngFor="let result of raceResults">
-      <p>Piloto: {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
-      <p>Constructor: {{ result.Constructor.name }}</p>
-      <p>Puntos: {{ result.points }}</p>
-    </li>
-  </ol>
+  <mat-card class="example-card1">
+    <mat-card-header>
+      <mat-card-title>Resultados de la Carrera</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/b/b4/2022_British_Grand_Prix_%2852381405112%29.jpg" alt="Photo of a Shiba Inu" width="100%">
+    <mat-card-content>
+
+      <ol>
+        <li *ngFor="let result of raceResults.slice(0, 1)">
+          <p>Piloto: {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
+          <p>Constructor: {{ result.Constructor.name }}</p>
+          <p>Puntos: {{ result.points }}</p>
+        </li>
+      </ol>
+
+    <p>
+      pole position
+      race winer
+      fast lap
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>More Details</button>
+  </mat-card-actions>
+</mat-card>
 </div>
+
+
+<div *ngFor="let result of raceResults">
+<div *ngIf="raceResults.length > 0">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Resultados de la Carrera</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/b/b4/2022_British_Grand_Prix_%2852381405112%29.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+
+      <ol>
+        <li >
+          <p>Piloto: {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
+          <p>Constructor: {{ result.Constructor.name }}</p>
+          <p>Puntos: {{ result.points }}</p>
+          <p>Pole position: {{ result.Driver.givenName }} </p>
+        </li>
+      </ol>
+
+    <p>
+      pole position
+      race winer
+      fast lap
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+</div>
+-->

@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardsComponent } from './cards/cards.component';
+import { StandingsComponent } from './standings/standings.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Material
@@ -15,8 +16,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 
@@ -27,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     NavComponent,
     FooterComponent,
-    CardsComponent
+    CardsComponent,
+    StandingsComponent 
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

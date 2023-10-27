@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class RequestService {
 
   constructor(private http: HttpClient){
-    this.getLastRaceHttpClient();
+    //this.getLastRaceHttpClient();
   }
 
    getLastRaceHttpClient(){
