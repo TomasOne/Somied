@@ -1,18 +1,20 @@
+.example-card1 {
+  width: 90%; /* Ancho del 90% del contenedor padre */
+  margin: 5%; /* Margen del 5% del contenedor padre */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
 
-  .example-card1 {
-    width: 60%;
-    margin: 10px;
-    
-  }
+.card-content {
+  max-height: 300px; /* Altura máxima del contenido (ajusta según tu preferencia) */
+  overflow-y: auto; /* Permitir desplazamiento vertical cuando el contenido es demasiado largo */
+}
 
-.example-card {
-    /*max-width: 400px;*/
-    width: 50%;
-    float: left;
-  
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+.additional-info {
+  background-color: #f3f3f3; /* Fondo gris claro */
+  padding: 10px; /* Espaciado interior */
+  border-top: 1px solid #ccc; /* Línea superior */
+}
+
+.additional-info p {
+  margin: 0; /* Elimina el margen de los párrafos internos */
+}

@@ -1,17 +1,13 @@
 <p>
     <mat-toolbar>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
+      <span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="goHome()">
+        <mat-icon>home</mat-icon>
+        Home
       </button>
-      <span>Somied F1</span>
+      </span>
       <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="goToStandings()">
-        <mat-icon>share</mat-icon>
-      </button>
-      <a class="button" routerLink="/standings" routerLinkActive=""></a>
+        <button mat-raised-button (click)="goToStandings()">Stadings</button>
     </mat-toolbar>
   </p>
   

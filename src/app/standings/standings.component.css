@@ -1,9 +1,33 @@
-/* Structure */
-table {
-    width: 100%;
+.table-container {
+    max-width: 80%; /* Establece un ancho máximo del 80% de la ventana */
+    overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
+    margin: 0 auto; /* Centra la tabla horizontalmente en la página */
   }
   
-  .mat-mdc-form-field {
-    font-size: 14px;
+  .custom-mat-table {
     width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
   }
+
+  .custom-header {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .custom-cell {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .custom-cell:last-child {
+    border-bottom: none;
+  }
+  
+  .custom-cell:hover {
+    background-color: #f0f0f0;
+  }
+  

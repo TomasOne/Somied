@@ -16,4 +16,8 @@ export class NavComponent implements OnInit {
     this.router.navigate(['/standings']);
   }
 
+  goHome() {
+    this.router.navigate(['/']);
+  }
+
 }
