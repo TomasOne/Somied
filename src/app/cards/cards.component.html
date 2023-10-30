@@ -1,21 +1,22 @@
 <div *ngIf="raceResults.length > 0">
-  <mat-card class="example-card1 bigger-card">
-    <mat-card-header>
-      <mat-card-title>Resultados de la Carrera</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/b/b4/2022_British_Grand_Prix_%2852381405112%29.jpg" alt="Photo of a Shiba Inu" width="100%">
+  <mat-card class="example-card2 bigger-card">
     <mat-card-content class="card-content">
-      <ol>
-        <li *ngFor="let result of raceResults.slice(0, 1)">
-          <p><strong>Piloto:</strong> {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
-          <p><strong>Constructor:</strong> {{ result.Constructor.name }}</p>
-          <p><strong>Puntos:</strong> {{ result.points }}</p>
-        </li>
-      </ol>
-      <div class="additional-info">
-        <p><strong>Pole Position:</strong> Descripción de la pole position</p>
-        <p><strong>Winner:</strong> Descripción del ganador de la carrera</p>
-        <p><strong>Fast Lap:</strong> Descripción de la vuelta rápida</p>
+      <div class="card-content-left">
+        <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/b/b4/2022_British_Grand_Prix_%2852381405112%29.jpg" alt="Photo of a Shiba Inu" width="100%">
+      </div>
+      <div class="card-content-right">
+        <ol>
+          <li *ngFor="let result of raceResults.slice(0, 1)">
+            <p><strong>Piloto:</strong> {{ result.Driver.givenName }} {{ result.Driver.familyName }}</p>
+            <p><strong>Constructor:</strong> {{ result.Constructor.name }}</p>
+            <p><strong>Puntos:</strong> {{ result.points }}</p>
+          </li>
+        </ol>
+        <div class="additional-info">
+          <p><strong>Pole Position:</strong> Descripción de la pole position</p>
+          <p><strong>Winner:</strong> Descripción del ganador de la carrera</p>
+          <p><strong>Fast Lap:</strong> Descripción de la vuelta rápida</p>
+        </div>
       </div>
     </mat-card-content>
     <mat-card-actions>

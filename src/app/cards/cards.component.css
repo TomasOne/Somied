@@ -1,12 +1,25 @@
-.example-card1 {
+.example-card2 {
   width: 90%; /* Ancho del 90% del contenedor padre */
   margin: 5%; /* Margen del 5% del contenedor padre */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
 }
 
 .card-content {
-  max-height: 300px; /* Altura máxima del contenido (ajusta según tu preferencia) */
-  overflow-y: auto; /* Permitir desplazamiento vertical cuando el contenido es demasiado largo */
+  max-height: 100%; /* Ajusta la altura máxima al 100% para evitar la barra de desplazamiento */
+  overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+  display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
+}
+
+.card-content-left {
+  flex: 1; /* Ocupa el 50% del ancho disponible (imagen a la izquierda) */
+  padding: 10px;
+}
+
+.card-content-right {
+  flex: 1; /* Ocupa el 50% del ancho disponible (información a la derecha) */
+  padding: 10px;
+  border-left: 1px solid #ccc; /* Línea divisoria entre la imagen y la información */
 }
 
 .additional-info {
