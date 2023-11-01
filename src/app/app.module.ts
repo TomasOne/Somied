@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SeasonComponent } from './season/season.component';
 
 
 
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     FooterComponent,
     CardsComponent,
-    StandingsComponent 
+    StandingsComponent,
+    SeasonComponent 
   ],
   imports: [
     BrowserModule,
