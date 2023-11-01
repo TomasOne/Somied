@@ -7,19 +7,22 @@ import { HttpClient } from '@angular/common/http';
 
 export class RequestService {
 
-  constructor(private http: HttpClient){
-    //this.getLastRaceHttpClient();
+  constructor(private http: HttpClient) { }
+
+  // METODOS //
+  getLastRaceHttpClient() {
+    return this.http.get('https://ergast.com/api/f1/current/last/results.json');
   }
 
-   getLastRaceHttpClient(){
-    return this.http.get('https://ergast.com/api/f1/current/last/results.json');
-   }
+  getAllRacesCurrentSeason(race: number) {
+    return this.http.get(`https://ergast.com/api/f1/2023/${race}/results.json`);
+  }
 
-   getDriverStanding(){
+  getDriverStanding() {
     return this.http.get('https://ergast.com/api/f1/current/driverStandings.json');
-   }
+  }
 
-   getConstructorStanding(){
+  getConstructorStanding() {
     return this.http.get('https://ergast.com/api/f1/current/constructorStandings.json')
-   }
+  }
 }
