@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { forkJoin } from 'rxjs';
 import { RequestService } from 'src/app//services/request.service';
 
 @Component({
@@ -51,9 +52,9 @@ export class CardsComponent implements OnInit {
     });
   }*/
 
-  getAllRaces() {
+/*   getAllRaces() {
 
-    for (let race = 1; race <= 19; race++) {
+    for (let race = 2; race <= 19; race++) {
 
       let data = this.requestService.getAllRacesCurrentSeason(race);
       data.subscribe({
@@ -66,6 +67,26 @@ export class CardsComponent implements OnInit {
           }
         });
     }
+  } */
+
+  getAllRaces() {
+    const observables = [];
+  
+    for (let race = 1; race <= 19; race++) {
+      observables.push(this.requestService.getAllRacesCurrentSeason(race));
+    }
+  
+    forkJoin(observables).subscribe({
+      next: (responses: any[]) => {
+        for (const response of responses) {
+          const raceInfo = response.MRData.RaceTable.Races[0];
+          this.seasonRaceResults.push(raceInfo);
+        }
+      },
+      error: (error) => {
+        console.error('Error al obtener la información de las Carreras: ', error);
+      }
+    });
   }
 
 

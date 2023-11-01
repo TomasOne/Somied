@@ -3,7 +3,7 @@
   margin: 3% 5% 3% 10%; /* Margen del 5% del contenedor padre */
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra */
   display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
-  background-color: rgb(255, 199, 199);
+  background-color: gris(255, 199, 199);
 }
 
 .card-content {
