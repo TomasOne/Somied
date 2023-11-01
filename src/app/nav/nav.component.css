@@ -2,7 +2,7 @@
     flex: 1 1 auto;
   }
 
-  /* Estilos para la barra de navegación */
+/* Estilos para la barra de navegación */
 mat-toolbar {
   background-color: #1a2835; /* Color de fondo */
   color: white; /* Color del texto */
@@ -14,10 +14,20 @@ mat-toolbar span {
   font-size: 24px; /* Tamaño de fuente del título */
 }
 
+/* Hover Botón "Home" */
+mat-toolbar span:hover{
+  color: rgb(216, 36, 13);
+}
+
+/* F1 Logo */
+img{
+  width: 50px;
+  margin-top: 2px;
+}
+
 /* Estilos para los iconos y botones */
 button.mat-icon-button {
   color: white; /* Color de los iconos */
   margin: 0 8px; /* Espaciado entre los iconos */
   font-size: 24px; /* Tamaño de fuente de los iconos */
-
 }

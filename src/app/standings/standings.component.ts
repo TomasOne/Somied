@@ -8,11 +8,19 @@ import { RequestService } from 'src/app/services/request.service';
 })
 
 export class StandingsComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'piloto', 'puntos'];
+
+  displayedColumnsDrivers: string[] = ['position', 'piloto', 'puntos'];
+  displayedColumnsConstructors: string[] = ['position', 'constructor', 'puntos'];
   dataSource: any[] = []; // Inicializamos el dataSource como un array vacío
   driverResult: any[] = [];
+  constructorResult: any[] = [];
 
   constructor(private requestService: RequestService) {}
+
+  ngOnInit(): void {
+    this.getDrivers();
+    this.getConstructors();
+  }
 
   getDrivers() {
     this.requestService.getDriverStanding().subscribe({
@@ -22,12 +30,21 @@ export class StandingsComponent implements OnInit {
         this.dataSource = this.driverResult; // Asignamos los datos a dataSource
       },
       error: (error) => {
-        console.error('Error al obtener la carrera:', error);
+        console.error('Error al obtener Standing de los Pilotos: ', error);
       }
     });
   }
 
-  ngOnInit(): void {
-    this.getDrivers();
+  getConstructors(){
+    this.requestService.getConstructorStanding().subscribe({
+      next: (response: any) => {
+      const constructorInfo = response.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
+      this.constructorResult = constructorInfo;
+      this.dataSource = this.constructorResult;
+    },
+    error: (error) => {
+      console.error('Error al obtener Standing de los Constructores: ', error);
+    }
+    })
   }
 }
