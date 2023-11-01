@@ -65,17 +65,19 @@
     <mat-card class="example-card2 bigger-card">
       <mat-card-content class="card-content">
         <div class="card-content-left">
-          <img mat-card-image
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b4/2022_British_Grand_Prix_%2852381405112%29.jpg"
-            alt="Max Verstappen" width="100%">
+          <img mat-card-image 
+            src="../../assets/images/F1-GP_Flags/{{raceResult.Circuit.circuitId}}.png" 
+            alt="GP Flag"
+            width="75%">
         </div>
         <div class="card-content-right">
           <!--<div class="additional-info" *ngFor="let race of seasonRaceResults.slice(0, 1)">-->
-            <p><strong>Round: </strong> {{ raceResult.round }}</p>
-            <p><strong>Grand Prix: </strong> {{ raceResult.Circuit.circuitName }}</p>
-            <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }} {{ raceResult.Results[0].Driver.familyName }}</p>
-            <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
-            <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
+          <p><strong>Round: </strong> {{ raceResult.round }}</p>
+          <p><strong>Grand Prix: </strong> {{ raceResult.Circuit.circuitName }}</p>
+          <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }} {{
+            raceResult.Results[0].Driver.familyName }}</p>
+          <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
+          <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
           <!--</div>-->
         </div>
       </mat-card-content>
