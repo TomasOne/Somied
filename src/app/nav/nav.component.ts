@@ -12,12 +12,17 @@ export class NavComponent implements OnInit {
 
   ngOnInit() { }
 
-  goToStandings() {
-    this.router.navigate(['/standings']);
-  }
 
+  // METODOS //
   goHome() {
     this.router.navigate(['/']);
   }
 
+  goToDrivers() {
+    this.router.navigate(['/drivers']);
+  }
+
+  goToStandings() {
+    this.router.navigate(['/standings']);
+  }
 }
