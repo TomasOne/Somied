@@ -52,30 +52,30 @@ export class CardsComponent implements OnInit {
     });
   }*/
 
-/*   getAllRaces() {
-
-    for (let race = 2; race <= 19; race++) {
-
-      let data = this.requestService.getAllRacesCurrentSeason(race);
-      data.subscribe({
-          next: (response: any) => {
-            const raceInfo = response.MRData.RaceTable.Races[0];
-            this.seasonRaceResults.push(raceInfo);
-          },
-          error: (error) => {
-            console.error('Error al obtener la informacion de la Carrera: ', error);
-          }
-        });
-    }
-  } */
+  /*   getAllRaces() {
+  
+      for (let race = 2; race <= 19; race++) {
+  
+        let data = this.requestService.getAllRacesCurrentSeason(race);
+        data.subscribe({
+            next: (response: any) => {
+              const raceInfo = response.MRData.RaceTable.Races[0];
+              this.seasonRaceResults.push(raceInfo);
+            },
+            error: (error) => {
+              console.error('Error al obtener la informacion de la Carrera: ', error);
+            }
+          });
+      }
+    } */
 
   getAllRaces() {
     const observables = [];
-  
+
     for (let race = 1; race <= 19; race++) {
       observables.push(this.requestService.getAllRacesCurrentSeason(race));
     }
-  
+
     forkJoin(observables).subscribe({
       next: (responses: any[]) => {
         for (const response of responses) {

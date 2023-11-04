@@ -59,31 +59,30 @@
 </div>
 </div>
 -->
-
-<div *ngFor="let raceResult of seasonRaceResults">
-  <div *ngIf="raceResult">
-    <mat-card class="example-card2 bigger-card">
-      <mat-card-content class="card-content">
-        <div class="card-content-left">
-          <img mat-card-image 
-            src="../../assets/images/F1-GP_Flags/{{raceResult.Circuit.circuitId}}.png" 
-            alt="GP Flag"
-            width="75%">
-        </div>
-        <div class="card-content-right">
-          <!--<div class="additional-info" *ngFor="let race of seasonRaceResults.slice(0, 1)">-->
-          <p><strong>Round: </strong> {{ raceResult.round }}</p>
-          <p><strong>Grand Prix: </strong> {{ raceResult.Circuit.circuitName }}</p>
-          <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }} {{
-            raceResult.Results[0].Driver.familyName }}</p>
-          <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
-          <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
-          <!--</div>-->
-        </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>More Details</button>
-      </mat-card-actions>
-    </mat-card>
+<div class="table-container">
+  <div *ngFor="let raceResult of seasonRaceResults">
+    <div *ngIf="raceResult">
+      <mat-card class="example-card2 bigger-card">
+        <mat-card-content class="card-content">
+          <div class="card-content-left">
+            <img mat-card-image src="../../assets/images/F1-GP_Flags/{{raceResult.Circuit.circuitId}}.png" alt="GP Flag"
+              width="70%">
+          </div>
+          <div class="card-content-right">
+            <h2> {{ raceResult.Circuit.circuitName }} </h2>
+            <div class="additional-info">
+              <p><strong>Round: </strong> {{ raceResult.round }}</p>
+              <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }}
+                {{raceResult.Results[0].Driver.familyName }}</p>
+              <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
+              <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>More Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
 </div>
