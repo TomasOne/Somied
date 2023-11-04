@@ -10,32 +10,35 @@
 </div>-->
 
 <div class="table-container">
-<h2>Driver Standings</h2>
-<table mat-table [dataSource]="driverResult" class="custom-mat-table mat-elevation-z8">
-  <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef class="custom-header"> Posición </th>
-    <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.position}} </td>
-  </ng-container>
+  <br>
+  <h2>Driver Standings</h2>
+  <table mat-table [dataSource]="driverResult" class="custom-mat-table mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef class="custom-header"> Posición </th>
+      <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.position}} </td>
+    </ng-container>
 
-  <!-- Piloto Column -->
-  <ng-container matColumnDef="piloto">
-    <th mat-header-cell *matHeaderCellDef class="custom-header"> Piloto </th>
-    <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.Driver.givenName}} {{element.Driver.familyName}} </td>
-  </ng-container>
+    <!-- Piloto Column -->
+    <ng-container matColumnDef="piloto">
+      <th mat-header-cell *matHeaderCellDef class="custom-header"> Piloto </th>
+      <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.Driver.givenName}}
+        {{element.Driver.familyName}} </td>
+    </ng-container>
 
-  <!-- Puntos Column -->
-  <ng-container matColumnDef="puntos">
-    <th mat-header-cell *matHeaderCellDef class="custom-header"> Puntos </th>
-    <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.points}} </td>
-  </ng-container>
+    <!-- Puntos Column -->
+    <ng-container matColumnDef="puntos">
+      <th mat-header-cell *matHeaderCellDef class="custom-header"> Puntos </th>
+      <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.points}} </td>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumnsDrivers"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumnsDrivers"></tr>
-</table>
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsDrivers"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsDrivers"></tr>
+  </table>
 </div>
 
-<br><hr><br>
+<br>
+<hr><br>
 
 <div class="table-container">
   <h2>Constructor Standings</h2>
@@ -45,18 +48,18 @@
       <th mat-header-cell *matHeaderCellDef class="custom-header"> Posición </th>
       <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.position}} </td>
     </ng-container>
-  
+
     <ng-container matColumnDef="constructor">
       <th mat-header-cell *matHeaderCellDef class="custom-header"> Constructor </th>
       <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.Constructor.name}} </td>
     </ng-container>
-  
+
     <ng-container matColumnDef="puntos">
       <th mat-header-cell *matHeaderCellDef class="custom-header"> Puntos </th>
       <td mat-cell *matCellDef="let element" class="custom-cell"> {{element.points}} </td>
     </ng-container>
-  
+
     <tr mat-header-row *matHeaderRowDef="displayedColumnsConstructors"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumnsConstructors"></tr>
   </table>
-  </div>
+</div>
