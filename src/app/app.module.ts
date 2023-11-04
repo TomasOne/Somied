@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardsComponent } from './cards/cards.component';
 import { StandingsComponent } from './standings/standings.component';
+import { DriversComponent } from './drivers/drivers.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Material
@@ -36,7 +37,8 @@ import { SeasonComponent } from './season/season.component';
     FooterComponent,
     CardsComponent,
     StandingsComponent,
-    SeasonComponent 
+    SeasonComponent,
+    DriversComponent 
   ],
   imports: [
     BrowserModule,
