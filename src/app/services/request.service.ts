@@ -9,7 +9,7 @@ export class RequestService {
 
   constructor(private http: HttpClient) { }
 
-  // METODOS //
+  // METODOS API//
   getLastRaceHttpClient() {
     return this.http.get('https://ergast.com/api/f1/current/last/results.json');
   }
@@ -24,5 +24,10 @@ export class RequestService {
 
   getConstructorStanding() {
     return this.http.get('https://ergast.com/api/f1/current/constructorStandings.json')
+  }
+
+  // METODOS JSON //
+  getDriversJson(id: number) {
+    return this.http.get(`http://localhost:3000/drivers/${id}`);
   }
 }
