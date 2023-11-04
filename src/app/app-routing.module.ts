@@ -2,11 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StandingsComponent } from './standings/standings.component';
+import { DriversComponent } from './drivers/drivers.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'drivers',
+    component: DriversComponent
   },
   {
     path: 'standings',
