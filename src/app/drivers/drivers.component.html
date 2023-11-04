@@ -1,1 +1,27 @@
-<p>drivers works!</p>
+<div class="table-container">
+    <br>
+    <h2><strong>Drivers</strong></h2>
+    <div *ngFor="let driver of driverData">
+        <div *ngIf="driver">
+            <mat-card class="example-card2 bigger-card">
+                <mat-card-content class="card-content">
+                    <div class="card-content-left">
+                        <img mat-card-image src="../../assets/images/F1-Drivers/{{driver.familyName}}.png"
+                            alt="Driver Image" width="70%">
+                    </div>
+                    <div class="card-content-right">
+                        <h2>{{ driver.givenName }} {{ driver.familyName }}</h2>
+                        <div class="additional-info">
+                            <p><strong>Nationality: </strong>{{ driver.nationality }}</p>
+                            <p><strong>Races: </strong>{{ driver.races }}</p>
+                            <p><strong>Pole Positions: </strong>{{ driver.poloPositions }}</p>
+                            <p><strong>Podiums: </strong>{{ driver.podiums }}</p>
+                            <p><strong>Wins: </strong>{{ driver.wins }}</p>
+                            <p><strong>World Championships: </strong>{{ driver.worldChampionships }}</p>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

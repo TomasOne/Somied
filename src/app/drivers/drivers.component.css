@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.table-container {
+  max-width: 80%; /* Establece un ancho máximo del 80% de la ventana */
+  overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
+  margin: 0 auto; /* Centra la tabla horizontalmente en la página */
+}
+
+.example-card2 {
+  width: 80%; /* Ancho del 90% del contenedor padre */
+  margin: 3% 5% 3% 10%; /* Margen del 5% del contenedor padre */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra */
+  display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
+  background-color: gris(255, 199, 199);
+}
+
+.card-content {
+  max-height: 100%; /* Ajusta la altura máxima al 100% para evitar la barra de desplazamiento */
+  overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+  display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
+}
+
+.card-content-left {
+  flex: 0.5; /* Ocupa el 50% del ancho disponible (imagen a la izquierda) */
+  margin-left: 5%;
+  padding: 10px 0px 0px 0px;
+}
+
+.card-content-right {
+  flex: 1; /* Ocupa el 50% del ancho disponible (información a la derecha) */
+  padding: 10px;
+  border-left: 1px solid #ccc; /* Línea divisoria entre la imagen y la información */
+}
+
+.additional-info {
+  background-color: #f3f3f3; /* Fondo gris claro */
+  padding: 10px; /* Espaciado interior */
+  border-top: 1px solid #ccc; /* Línea superior */
+  font-size: larger;
+}
+
+.additional-info p {
+  margin: 0; /* Elimina el margen de los párrafos internos */
+}
