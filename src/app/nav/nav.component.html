@@ -8,7 +8,9 @@
       </button>
     </span>
     <span class="example-spacer"></span>
-    <button mat-raised-button (click)="goToDrivers()">Drivers</button>
-    <button mat-raised-button (click)="goToStandings()">Standings</button>
+    <div class="button-container">
+    <button mat-raised-button class="custom-button" (click)="goToDrivers()">Drivers</button>
+    <button mat-raised-button class="custom-button" (click)="goToStandings()">Standings</button>
+    </div>
   </mat-toolbar>
 </div>

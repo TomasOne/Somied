@@ -1,10 +1,11 @@
 .example-spacer {
     flex: 1 1 auto;
+    
   }
 
 /* Estilos para la barra de navegación */
 mat-toolbar {
-  background-color: #1a2835; /* Color de fondo */
+  background-color: #e10600; /* Color de fondo */
   color: white; /* Color del texto */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12); /* Sombra */
 }
@@ -16,7 +17,7 @@ mat-toolbar span {
 
 /* Hover Botón "Home" */
 mat-toolbar span:hover{
-  color: rgb(216, 36, 13);
+  color: black;
 }
 
 /* F1 Logo */
@@ -30,4 +31,25 @@ button.mat-icon-button {
   color: white; /* Color de los iconos */
   margin: 0 8px; /* Espaciado entre los iconos */
   font-size: 24px; /* Tamaño de fuente de los iconos */
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px; /* Espaciado entre los botones y el contenedor */
+}
+
+/* Estilos para los botones */
+.custom-button {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interior */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Quita el subrayado de enlace */
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
+  margin-right: 10px; /* Espaciado entre los botones */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
 }
