@@ -45,3 +45,9 @@ h2 {
 .additional-info p {
   margin: 0; /* Elimina el margen de los párrafos internos */
 }
+
+.table-container-last-race{
+  max-width: 100%; /* Establece un ancho máximo del 80% de la ventana */
+  overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
+  margin: 0 auto; /* Centra la tabla horizontalmente en la página */
+}
