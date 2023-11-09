@@ -21,6 +21,7 @@ h2 {
   max-height: 100%; /* Ajusta la altura máxima al 100% para evitar la barra de desplazamiento */
   overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
   display: flex; /* Utiliza un diseño de flexbox para controlar la altura */
+  border-top: 10px;
 }
 
 .card-content-left {
@@ -32,13 +33,12 @@ h2 {
 .card-content-right {
   flex: 1; /* Ocupa el 50% del ancho disponible (información a la derecha) */
   padding: 10px;
-  border-left: 1px solid #ccc; /* Línea divisoria entre la imagen y la información */
+  border-left: 3px solid #212529; /* Línea divisoria entre la imagen y la información */
 }
 
 .additional-info {
-  background-color: #f3f3f3; /* Fondo gris claro */
   padding: 10px; /* Espaciado interior */
-  border-top: 1px solid #ccc; /* Línea superior */
+  /*border-top: 1px solid #ccc; /* Línea superior */
   font-size: larger;
 }
 
@@ -50,4 +50,13 @@ h2 {
   max-width: 100%; /* Establece un ancho máximo del 80% de la ventana */
   overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
   margin: 0 auto; /* Centra la tabla horizontalmente en la página */
+}
+
+.text-detail-races{
+  margin-top: 3%;
+  color: whitesmoke;
+
+}
+.div-bar{
+
 }
