@@ -30,7 +30,6 @@ export class GpDetailComponent implements OnInit {
 
   getGpResult() {
 
-    console.log(this.race);
     this.requestService.getAllRacesCurrentSeason(this.race).subscribe({
       next: (response: any) => {
         const gpData = response.MRData.RaceTable.Races[0].Results;

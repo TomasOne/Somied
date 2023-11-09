@@ -10,7 +10,7 @@ export class RequestService {
   constructor(private http: HttpClient) { }
 
   // METODOS API//
-  getLastRaceHttpClient() {
+  getLastRace() {
     return this.http.get('https://ergast.com/api/f1/current/last/results.json');
   }
 
