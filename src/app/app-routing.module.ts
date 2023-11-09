@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StandingsComponent } from './standings/standings.component';
 import { DriversComponent } from './drivers/drivers.component';
+import { GpDetailComponent } from './gpDetail/gpDetail.component';
+
 
 const routes: Routes = [
   {
@@ -16,6 +18,10 @@ const routes: Routes = [
   {
     path: 'standings',
     component: StandingsComponent
+  },
+  {
+    path: 'gp-detail/:raceID',
+    component: GpDetailComponent
   }
 ];
 
