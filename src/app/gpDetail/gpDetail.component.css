@@ -11,7 +11,7 @@ h2 {
   max-width: 85%;
   overflow-x: auto;
   margin: 0 auto;
-  border: 1px solid #ccc; /* Borde ligero alrededor del contenedor */
+  /*border: 1px solid #ccc; /* Borde ligero alrededor del contenedor */
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   padding: 10px;
@@ -23,16 +23,16 @@ h2 {
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   margin-top: 20px; /* Espaciado entre la tabla y el título */
+  background-color: #a81c17;
 }
 
 /* Estilos para las celdas de encabezado */
 .custom-header {
-  background-color: #f3f3f3;
   font-weight: bold;
   padding: 10px;
   text-align: left;
   border-bottom: 2px solid #ccc;
-  color: #333; /* Color de texto más oscuro */
+  color: white; /* Color de texto más oscuro */
 }
 
 /* Estilos para las celdas de datos */
@@ -40,6 +40,7 @@ h2 {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   color: #555; /* Color de texto más oscuro */
+  background-color:  #ffefc3
 }
 
 /* Estilos para la última celda de datos */
@@ -52,4 +53,12 @@ h2 {
   background-color: #f0f0f0;
   cursor: pointer;
   transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+.background{
+  background-color: #212529;
+}
+
+.text-detail-race{
+  margin-top: 3%;
+  color: whitesmoke;
 }
