@@ -52,4 +52,8 @@ button.mat-icon-button {
   transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
   margin-right: 10px; /* Espaciado entre los botones */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+
+}
+.custom-button:hover {
+  background-color: gray; /* Cambia el color de fondo al pasar el mouse */
 }

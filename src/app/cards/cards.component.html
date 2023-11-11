@@ -25,6 +25,7 @@
 
 
 <div class="table-container">
+  <h2 class="text-detail-races">Season Races</h2>
   <div *ngFor="let raceResult of seasonRaceResults">
     <div *ngIf="raceResult">
       <mat-card class="example-card2 bigger-card">
@@ -45,10 +46,11 @@
           </div>
         </mat-card-content>
         <div class="div-bar">
-          <mat-card-actions>
+          <mat-card-actions class="actions">
             <button mat-button (click)="goToGpResults(lastRaceResult[0].round)">More Details</button>
           </mat-card-actions>
         </div>
+        
       </mat-card>
     </div>
   </div>
