@@ -1,15 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { GpDetailComponent } from './gpDetail/gpDetail.component';
 import { StandingsComponent } from './standings/standings.component';
 import { DriversComponent } from './drivers/drivers.component';
-import { GpDetailComponent } from './gpDetail/gpDetail.component';
 
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'gp-detail/:raceID',
+    component: GpDetailComponent
   },
   {
     path: 'drivers',
@@ -20,8 +34,8 @@ const routes: Routes = [
     component: StandingsComponent
   },
   {
-    path: 'gp-detail/:raceID',
-    component: GpDetailComponent
+    path:'**',
+    component: LoginComponent
   }
 ];
 

@@ -23,6 +23,9 @@ import { MatTableModule } from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { GpDetailComponent } from './gpDetail/gpDetail.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -38,7 +41,9 @@ import { GpDetailComponent } from './gpDetail/gpDetail.component';
     CardsComponent,
     StandingsComponent,
     GpDetailComponent,
-    DriversComponent 
+    DriversComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { GpDetailComponent } from './gpDetail/gpDetail.component';
     HttpClientModule,
     MatFormFieldModule, 
     MatInputModule, 
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
