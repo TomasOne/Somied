@@ -11,7 +11,7 @@ export class StandingsComponent implements OnInit {
 
   displayedColumnsDrivers: string[] = ['position', 'piloto', 'puntos'];
   displayedColumnsConstructors: string[] = ['position', 'constructor', 'puntos'];
-  dataSource: any[] = []; // Inicializamos el dataSource como un array vacío
+  dataSource: any[] = [];
   driverResult: any[] = [];
   constructorResult: any[] = [];
 
@@ -27,7 +27,7 @@ export class StandingsComponent implements OnInit {
       next: (response: any) => {
         const driverInfo = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
         this.driverResult = driverInfo;
-        this.dataSource = this.driverResult; // Asignamos los datos a dataSource
+        this.dataSource = this.driverResult;
       },
       error: (error) => {
         console.error('Error al obtener Standing de los Pilotos: ', error);

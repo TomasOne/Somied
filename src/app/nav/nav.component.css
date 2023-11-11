@@ -3,57 +3,50 @@
     
   }
 
-/* Estilos para la barra de navegación */
 mat-toolbar {
-  background-color: #e10600; /* Color de fondo */
-  color: white; /* Color del texto */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12); /* Sombra */
+  background-color: #e10600;
+  color: white;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* Estilo para el texto del título "My App" */
 mat-toolbar span {
-  font-size: 24px; /* Tamaño de fuente del título */
+  font-size: 24px;
 }
 
-/* Hover Botón "Home" */
 mat-toolbar span:hover{
   color: black;
 }
 
-/* F1 Logo */
 img{
   width: 50px;
   margin-top: 2px;
 }
 
-/* Estilos para los iconos y botones */
 button.mat-icon-button {
-  color: white; /* Color de los iconos */
-  margin: 0 8px; /* Espaciado entre los iconos */
-  font-size: 24px; /* Tamaño de fuente de los iconos */
+  color: white;
+  margin: 0 8px;
+  font-size: 24px;
 }
 
-/* Estilos para el contenedor de botones */
 .button-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px; /* Espaciado entre los botones y el contenedor */
+  margin: 20px;
 }
 
-/* Estilos para los botones */
 .custom-button {
-  background-color: #007bff; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interior */
-  border-radius: 5px; /* Bordes redondeados */
-  text-decoration: none; /* Quita el subrayado de enlace */
-  font-size: 16px; /* Tamaño del texto */
-  font-weight: bold; /* Texto en negrita */
-  transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
-  margin-right: 10px; /* Espaciado entre los botones */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 }
 .custom-button:hover {
-  background-color: gray; /* Cambia el color de fondo al pasar el mouse */
+  background-color: gray;
 }

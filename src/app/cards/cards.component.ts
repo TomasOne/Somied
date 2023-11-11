@@ -10,7 +10,7 @@ import { RequestService } from 'src/app//services/request.service';
 })
 export class CardsComponent implements OnInit {
 
-  raceInfo: any; // Agrega la propiedad raceInfo
+  raceInfo: any;
   raceResults: any[] = [];
   seasonRaceResults: any[] = [];
   lastRaceResult: any[] = [];
