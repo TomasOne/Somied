@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
 
   // METODOS //
   goHome() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/home']);
   }
 
   goToDrivers() {
