@@ -3,6 +3,10 @@ h2 {
   font-size: 30px;
 }
 
+img {
+  border-radius: 5% !important;
+}
+
 .table-container-last-race{
   max-width: 100%;
   overflow-x: auto;
