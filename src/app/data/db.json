@@ -6,7 +6,7 @@
       "familyName": "Verstappen",
       "nationality": "Dutch",
       "races": "182",
-      "poloPositions": "31",
+      "polePositions": "31",
       "podiums": "95",
       "wins": "51",
       "worldChampionships": "3"
@@ -17,7 +17,7 @@
       "familyName": "Pérez",
       "nationality": "Mexican",
       "races": "256",
-      "poloPositions": "3",
+      "polePositions": "3",
       "podiums": "34",
       "wins": "6",
       "worldChampionships": "0"
@@ -28,7 +28,7 @@
       "familyName": "Hamilton",
       "nationality": "British",
       "races": "329",
-      "poloPositions": "104",
+      "polePositions": "104",
       "podiums": "197",
       "wins": "103",
       "worldChampionships": "7"
@@ -39,7 +39,7 @@
       "familyName": "Russell",
       "nationality": "British",
       "races": "101",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "10",
       "wins": "1",
       "worldChampionships": "0"
@@ -50,7 +50,7 @@
       "familyName": "Leclerc",
       "nationality": "Monegasque",
       "races": "122",
-      "poloPositions": "20",
+      "polePositions": "20",
       "podiums": "28",
       "wins": "5",
       "worldChampionships": "0"
@@ -61,7 +61,7 @@
       "familyName": "Sainz",
       "nationality": "Spanish",
       "races": "182",
-      "poloPositions": "5",
+      "polePositions": "5",
       "podiums": "18",
       "wins": "2",
       "worldChampionships": "0"
@@ -72,7 +72,7 @@
       "familyName": "Norris",
       "nationality": "British",
       "races": "101",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "12",
       "wins": "0",
       "worldChampionships": "0"
@@ -83,7 +83,7 @@
       "familyName": "Piastri",
       "nationality": "Australian",
       "races": "19",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "2",
       "wins": "0",
       "worldChampionships": "0"
@@ -94,7 +94,7 @@
       "familyName": "Alonso",
       "nationality": "Spanish",
       "races": "377",
-      "poloPositions": "22",
+      "polePositions": "22",
       "podiums": "105",
       "wins": "32",
       "worldChampionships": "2"
@@ -105,7 +105,7 @@
       "familyName": "Stroll",
       "nationality": "Canadian",
       "races": "141",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "3",
       "wins": "0",
       "worldChampionships": "0"
@@ -116,7 +116,7 @@
       "familyName": "Gasly",
       "nationality": "French",
       "races": "127",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "4",
       "wins": "1",
       "worldChampionships": "0"
@@ -127,7 +127,7 @@
       "familyName": "Ocon",
       "nationality": "French",
       "races": "130",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "3",
       "wins": "1",
       "worldChampionships": "0"
@@ -138,7 +138,7 @@
       "familyName": "Albon",
       "nationality": "Thai",
       "races": "78",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "2",
       "wins": "0",
       "worldChampionships": "0"
@@ -149,7 +149,7 @@
       "familyName": "Sargeant",
       "nationality": "American",
       "races": "19",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -160,7 +160,7 @@
       "familyName": "de Vries",
       "nationality": "Dutch",
       "races": "11",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -171,7 +171,7 @@
       "familyName": "Tsunoda",
       "nationality": "Japanese",
       "races": "63",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -182,7 +182,7 @@
       "familyName": "Ricciardo",
       "nationality": "Australian",
       "races": "236",
-      "poloPositions": "3",
+      "polePositions": "3",
       "podiums": "32",
       "wins": "8",
       "worldChampionships": "0"
@@ -193,7 +193,7 @@
       "familyName": "Lawson",
       "nationality": "New Zealander",
       "races": "5",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -204,7 +204,7 @@
       "familyName": "Bottas",
       "nationality": "Finnish",
       "races": "220",
-      "poloPositions": "20",
+      "polePositions": "20",
       "podiums": "67",
       "wins": "10",
       "worldChampionships": "0"
@@ -215,7 +215,7 @@
       "familyName": "Zhou",
       "nationality": "Chinese",
       "races": "41",
-      "poloPositions": "0",
+      "polePositions": "0",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -226,7 +226,7 @@
       "familyName": "Hülkenberg",
       "nationality": "German",
       "races": "203",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "0",
       "wins": "0",
       "worldChampionships": "0"
@@ -237,7 +237,7 @@
       "familyName": "Magnussen",
       "nationality": "Danish",
       "races": "161",
-      "poloPositions": "1",
+      "polePositions": "1",
       "podiums": "1",
       "wins": "0",
       "worldChampionships": "0"
