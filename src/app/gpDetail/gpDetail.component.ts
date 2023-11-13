@@ -35,7 +35,6 @@ export class GpDetailComponent implements OnInit {
         const gpData = response.MRData.RaceTable.Races[0].Results;
         this.gpDetailData = gpData;
         this.dataSource = this.gpDetailData;
-        console.log(this.dataSource);
       },
       error: (error) => {
         console.error('Error al obtener la informacion de la Carrera: ', error);
