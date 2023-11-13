@@ -1,27 +1,52 @@
 .example-spacer {
     flex: 1 1 auto;
+    
   }
 
-  /* Estilos para la barra de navegación */
 mat-toolbar {
-  background-color: #1976D2; /* Color de fondo */
-  color: white; /* Color del texto */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12); /* Sombra */
+  background-color: #e10600;
+  color: white;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* Estilo para el texto del título "My App" */
 mat-toolbar span {
-  font-size: 24px; /* Tamaño de fuente del título */
+  font-size: 24px;
 }
 
-/* Estilos para los iconos y botones */
+mat-toolbar span:hover{
+  color: black;
+}
+
+img{
+  width: 50px;
+  margin-top: 2px;
+}
+
 button.mat-icon-button {
-  color: white; /* Color de los iconos */
-  margin: 0 8px; /* Espaciado entre los iconos */
-  font-size: 24px; /* Tamaño de fuente de los iconos */
+  color: white;
+  margin: 0 8px;
+  font-size: 24px;
 }
 
-/* Estilo para el icono favorito */
-button.favorite-icon {
-  color: #FF6F61; /* Color de icono de favorito */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.custom-button:hover {
+  background-color: gray;
 }

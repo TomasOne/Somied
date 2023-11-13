@@ -1,0 +1,42 @@
+h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.background {
+  background-color: #212529;
+}
+
+.table-container {
+  margin: 0 auto;
+  overflow-x: auto;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.custom-mat-table {
+  font-family: Arial, sans-serif;
+  background-color: #a81c17;
+}
+
+.custom-header {
+  font-weight: bold;
+  font-size: larger;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  color: white;
+}
+
+.custom-cell {
+  font-size: larger;
+  border-bottom: 1px solid #ccc;
+  color: #555;
+}
+
+.custom-mat-table .custom-cell {
+  background-color: #ffefc3;
+  color: black;
+}

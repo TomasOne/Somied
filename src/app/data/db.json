@@ -1,0 +1,253 @@
+{
+  "drivers": [
+    {
+      "id": "1",
+      "givenName": "Max",
+      "familyName": "Verstappen",
+      "nationality": "Dutch",
+      "races": "182",
+      "polePositions": "31",
+      "podiums": "95",
+      "wins": "51",
+      "worldChampionships": "3"
+    },
+    {
+      "id": "2",
+      "givenName": "Sergio",
+      "familyName": "Pérez",
+      "nationality": "Mexican",
+      "races": "256",
+      "polePositions": "3",
+      "podiums": "34",
+      "wins": "6",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "3",
+      "givenName": "Lewis",
+      "familyName": "Hamilton",
+      "nationality": "British",
+      "races": "329",
+      "polePositions": "104",
+      "podiums": "197",
+      "wins": "103",
+      "worldChampionships": "7"
+    },
+    {
+      "id": "4",
+      "givenName": "George",
+      "familyName": "Russell",
+      "nationality": "British",
+      "races": "101",
+      "polePositions": "1",
+      "podiums": "10",
+      "wins": "1",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "5",
+      "givenName": "Charles",
+      "familyName": "Leclerc",
+      "nationality": "Monegasque",
+      "races": "122",
+      "polePositions": "20",
+      "podiums": "28",
+      "wins": "5",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "6",
+      "givenName": "Carlos",
+      "familyName": "Sainz",
+      "nationality": "Spanish",
+      "races": "182",
+      "polePositions": "5",
+      "podiums": "18",
+      "wins": "2",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "7",
+      "givenName": "Lando",
+      "familyName": "Norris",
+      "nationality": "British",
+      "races": "101",
+      "polePositions": "1",
+      "podiums": "12",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "8",
+      "givenName": "Oscar",
+      "familyName": "Piastri",
+      "nationality": "Australian",
+      "races": "19",
+      "polePositions": "1",
+      "podiums": "2",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "9",
+      "givenName": "Fernando",
+      "familyName": "Alonso",
+      "nationality": "Spanish",
+      "races": "377",
+      "polePositions": "22",
+      "podiums": "105",
+      "wins": "32",
+      "worldChampionships": "2"
+    },
+    {
+      "id": "10",
+      "givenName": "Lance",
+      "familyName": "Stroll",
+      "nationality": "Canadian",
+      "races": "141",
+      "polePositions": "1",
+      "podiums": "3",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "11",
+      "givenName": "Pierre",
+      "familyName": "Gasly",
+      "nationality": "French",
+      "races": "127",
+      "polePositions": "0",
+      "podiums": "4",
+      "wins": "1",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "12",
+      "givenName": "Esteban",
+      "familyName": "Ocon",
+      "nationality": "French",
+      "races": "130",
+      "polePositions": "0",
+      "podiums": "3",
+      "wins": "1",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "13",
+      "givenName": "Alexander",
+      "familyName": "Albon",
+      "nationality": "Thai",
+      "races": "78",
+      "polePositions": "0",
+      "podiums": "2",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "14",
+      "givenName": "Logan",
+      "familyName": "Sargeant",
+      "nationality": "American",
+      "races": "19",
+      "polePositions": "0",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "15",
+      "givenName": "Nyck",
+      "familyName": "de Vries",
+      "nationality": "Dutch",
+      "races": "11",
+      "polePositions": "0",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "16",
+      "givenName": "Yuki",
+      "familyName": "Tsunoda",
+      "nationality": "Japanese",
+      "races": "63",
+      "polePositions": "0",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "17",
+      "givenName": "Daniel",
+      "familyName": "Ricciardo",
+      "nationality": "Australian",
+      "races": "236",
+      "polePositions": "3",
+      "podiums": "32",
+      "wins": "8",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "18",
+      "givenName": "Liam",
+      "familyName": "Lawson",
+      "nationality": "New Zealander",
+      "races": "5",
+      "polePositions": "0",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "19",
+      "givenName": "Valtteri",
+      "familyName": "Bottas",
+      "nationality": "Finnish",
+      "races": "220",
+      "polePositions": "20",
+      "podiums": "67",
+      "wins": "10",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "20",
+      "givenName": "Guanyu",
+      "familyName": "Zhou",
+      "nationality": "Chinese",
+      "races": "41",
+      "polePositions": "0",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "21",
+      "givenName": "Nico",
+      "familyName": "Hülkenberg",
+      "nationality": "German",
+      "races": "203",
+      "polePositions": "1",
+      "podiums": "0",
+      "wins": "0",
+      "worldChampionships": "0"
+    },
+    {
+      "id": "22",
+      "givenName": "Kevin",
+      "familyName": "Magnussen",
+      "nationality": "Danish",
+      "races": "161",
+      "polePositions": "1",
+      "podiums": "1",
+      "wins": "0",
+      "worldChampionships": "0"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "admin123"
+    }
+  ]
+}

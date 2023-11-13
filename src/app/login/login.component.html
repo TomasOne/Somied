@@ -1,0 +1,19 @@
+<body>
+    <div class="login-container">
+        <h1>Somied F1</h1>
+        <form (ngSubmit)="checkAuth()">
+
+            <div class="input-box">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="User" required [(ngModel)]="user.email" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required [(ngModel)]="user.password" required>
+            </div>
+            
+            <button type="submit" class="btn">Log In</button>
+        </form>
+        <p>Create Account <a (click)="goToRegister()">Here</a></p>
+    </div>
+</body>

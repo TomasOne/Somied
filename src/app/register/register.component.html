@@ -1,0 +1,25 @@
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+        <form autocomplete="off" (ngSubmit)="createUser(newUser)">
+
+            <div class="input-box">
+                <label for="id">ID: </label>
+                <input type="text" id="id" name="id" placeholder="ID" [(ngModel)]="newUser.id" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email" [(ngModel)]="newUser.email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="newUser.password"
+                    required>
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+    </div>
+</body>
