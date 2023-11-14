@@ -1,0 +1,50 @@
+/* En tu archivo view-season-comments.component.css */
+
+.table-container-last-race {
+
+  }
+  
+  .text-detail-races {
+    color: white;
+  }
+  
+  .full-card {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    padding: 15px; /* Aumentamos el padding para más espacio interno */
+    background-color: #212529; /* Fondo blanco para resaltar */
+    border-radius: 8px;
+    color: white;
+  }
+  
+  /* Estilo opcional para resaltar el nombre del comentario */
+  .card-content p strong {
+    color: #e10600; /* Color azul, puedes cambiarlo según tus preferencias */
+    transition: transform 0.3s ease-in-out;
+  }
+  .full-card:hover, .card-content:hover {
+    transform: scale(1.02);
+}
+button {
+    margin-right: 5px;
+}
+
+button[color="primary"] {
+    background-color: #e10600; /* Color primario azul */
+    color: white;
+}
+
+button[color="warn"] {
+    background-color: #dc3545; /* Color de advertencia rojo */
+    color: white; /* Texto blanco para mayor contraste */
+}
+
+.text-detail-races {
+    color: white; /* Color azul primario */
+    font-size: 24px;
+    margin-bottom: 15px;
+}

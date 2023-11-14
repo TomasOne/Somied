@@ -1,10 +1,28 @@
+<!-- En tu archivo view-season-comments.component.html -->
+
 <div class="table-container-last-race">
     <h2 class="text-detail-races">Season Comments</h2>
-    <div *ngFor="let comment of inputComments">
+    <div *ngFor="let comment of inputComments; let i = index">
         <mat-card class="full-card">
             <mat-card-content class="card-content">
                 <p><strong>Name: </strong>{{ comment.name }}</p>
-                <p><strong>Comment: </strong>{{ comment.comment }}</p>
+                <br>
+                <ng-container *ngIf="!comment.editing; else editMode">
+                    <p><strong>Comment: </strong>{{ comment.comment }}</p>
+                </ng-container>
+                <ng-template #editMode>
+                    <form (submit)="saveEdit(i)">
+                        <mat-form-field>
+                            <textarea matInput [(ngModel)]="comment.comment" name="editedComment" required></textarea>
+                        </mat-form-field>
+                        <button mat-button type="submit" color="primary">Save</button>
+                        <button mat-button type="button" color="warn" (click)="cancelEdit(i)">Cancel</button>
+                    </form>
+                </ng-template>
+
+                <!-- Botones de acción -->
+                <button mat-button color="primary" (click)="toggleEdit(i)">Edit</button>
+                <button mat-button color="warn" (click)="deleteComment(i)">Delete</button>
             </mat-card-content>
         </mat-card>
     </div>
