@@ -1,29 +1,31 @@
-<!-- En tu archivo view-season-comments.component.html -->
-
 <div class="table-container-last-race">
-    <h2 class="text-detail-races">Season Comments</h2>
-    <div *ngFor="let comment of inputComments; let i = index">
-        <mat-card class="full-card">
-            <mat-card-content class="card-content">
-                <div class="user"><p><strong></strong>{{ comment.name }}</p></div>
-                <br>
-                <ng-container *ngIf="!comment.editing; else editMode">
-                    <p><strong></strong>{{ comment.comment }}</p>
-                </ng-container>
-                <ng-template #editMode>
-                    <form (submit)="saveEdit(i)">
-                        <mat-form-field>
-                            <textarea matInput [(ngModel)]="comment.comment" name="editedComment" required></textarea>
-                        </mat-form-field>
-                        <button mat-button type="submit" color="primary">Save</button>
-                        <button mat-button type="button" color="warn" (click)="cancelEdit(i)">Cancel</button>
-                    </form>
-                </ng-template>
+  <h2 class="text-detail-races">Season Comments</h2>
+  <div *ngFor="let comment of inputComments; let i = index">
+      <mat-card class="full-card">
+          <mat-card-content class="card-content">
+              <div class="user">
+                  <p class="comment-name"><strong>{{ comment.name }}</strong></p>
+              </div>
+              <br>
+              <ng-container *ngIf="!comment.editing; else editMode">
+                  <p class="comment-text"><strong></strong>{{ comment.comment }}</p>
+              </ng-container>
+              <ng-template #editMode>
+                  <form (submit)="saveEdit(i)">
+                      <mat-form-field>
+                          <textarea matInput [(ngModel)]="comment.comment" name="editedComment" required></textarea>
+                      </mat-form-field>
+                      <button mat-button type="submit" ><mat-icon>check</mat-icon></button>
+                      <button mat-button type="button" (click)="cancelEdit(i)"><mat-icon>cancel</mat-icon></button>
+                  </form>
+              </ng-template>
 
-                <!-- Botones de acción -->
-                <button mat-button color="primary" (click)="toggleEdit(i)">Edit</button>
-                <button mat-button color="warn" (click)="deleteComment(i)">Delete</button>
-            </mat-card-content>
-        </mat-card>
-    </div>
+              <!-- Botones de acción -->
+              <div class="action-buttons">
+                  <button mat-button  (click)="toggleEdit(i)"><mat-icon>edit</mat-icon></button>
+                  <button mat-button  (click)="deleteComment(i)"><mat-icon>delete</mat-icon></button>
+              </div>
+          </mat-card-content>
+      </mat-card>
+  </div>
 </div>

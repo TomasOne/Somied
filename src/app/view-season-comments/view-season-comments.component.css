@@ -1,62 +1,66 @@
-/* Estilo para encabezados h2 */
-h2 {
-  text-align: center;
-  font-size: 30px;
+/* Añadir estos estilos */
+
+.comment-name {
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
 }
 
-/* Estilo para contenedor de tabla de comentarios */
-.table-container-comments {
-  max-width: 100%;
-  overflow-x: auto;
-  margin-bottom: 1%;
+.comment-text {
+  margin: 0;
+  text-align: left;
 }
 
-/* Estilo para texto de detalles de carreras */
-.text-detail-races {
-  margin-top: 2%;
-  color: whitesmoke;
+.action-buttons {
+  text-align: right;
+  margin-top: 10px;
 }
 
-/* Estilo para contenedor de tabla general */
-.table-container {
-  max-width: 85%;
-  overflow-x: auto;
-  margin: 0 auto;
-}
-
-/* Estilo para tarjeta completa */
 .full-card {
-  width: 60%;
-  margin: 2% 5% 3% 20%;
-  border: 2px solid #0073b1;
+  width: 50%;
+  margin: 2% 15% 0% 25%;
+  border: 2px solid #8f87747d;
   border-radius: 7px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
 }
 
-/* Estilo para el contenido de la tarjeta */
 .card-content {
   overflow-y: hidden;
-  background-color: #ffefc3;
+  background-color: #8f87747d;
   text-align: center;
 }
 
-/* Estilo para el texto dentro del contenido de la tarjeta */
 .card-content p {
   color: black;
+  margin: 0; /* Eliminar el margen predeterminado del párrafo */
 }
 
-/* Estilo para la barra en la parte inferior de la tarjeta */
 .div-bar {
   display: flex;
   justify-content: flex-end;
   background-color: #0073b1;
 }
 
-/* Estilo para el botón en el estado de hover */
 button:hover {
-  background-color: #ccc;
+  background-color: #dcc0c0;
 }
-.user{
-  text-align: left;
+
+.text-detail-races{
+    text-align: center;
+  font-size: 30px;
+  margin-top: 2%;
+  color: whitesmoke;
+}
+mat-form-field {
+  width: 100%; /* Hacer que el campo de formulario ocupe el 100% del ancho disponible */
+}
+
+textarea {
+  width: 100%; /* Hacer que el textarea ocupe el 100% del ancho disponible */
+  resize: vertical; /* Permitir la redimensión vertical */
+  min-height: 80px; /* Altura mínima */
+  border: 1px solid #ccc; /* Añadir un borde para mejorar la apariencia */
+  padding: 8px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de fuente */
 }
