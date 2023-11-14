@@ -15,7 +15,7 @@ export class StandingsComponent implements OnInit {
   driverResult: any[] = [];
   constructorResult: any[] = [];
 
-  constructor(private requestService: RequestService) {}
+  constructor(private requestService: RequestService) { }
 
   ngOnInit(): void {
     this.getDrivers();
@@ -35,16 +35,16 @@ export class StandingsComponent implements OnInit {
     });
   }
 
-  getConstructors(){
+  getConstructors() {
     this.requestService.getConstructorStanding().subscribe({
       next: (response: any) => {
-      const constructorInfo = response.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
-      this.constructorResult = constructorInfo;
-      this.dataSource = this.constructorResult;
-    },
-    error: (error) => {
-      console.error('Error al obtener Standing de los Constructores: ', error);
-    }
+        const constructorInfo = response.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
+        this.constructorResult = constructorInfo;
+        this.dataSource = this.constructorResult;
+      },
+      error: (error) => {
+        console.error('Error al obtener Standing de los Constructores: ', error);
+      }
     })
   }
 }

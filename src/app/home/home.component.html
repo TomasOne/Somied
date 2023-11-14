@@ -1,3 +1,10 @@
 <app-nav></app-nav>
-<div class="background"><app-cards></app-cards></div>
+<div class="background">
+    <div>
+        <app-cards></app-cards>
+    </div>
+    <div class="season-comments">
+        <app-view-season-comments [inputComments]="comments"></app-view-season-comments>
+    </div>
+</div>
 <app-footer></app-footer>

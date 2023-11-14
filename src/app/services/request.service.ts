@@ -33,16 +33,20 @@ export class RequestService {
     return this.http.get(`http://localhost:3000/drivers/${id}`);
   }
 
-  getUsersJson(){
+  getUsersJson() {
     return this.http.get(`http://localhost:3000/users`);
   }
 
-  getUserToAuth(email:string, password: string): Observable<User[]>{
+  getUserToAuth(email: string, password: string): Observable<User[]> {
     return this.http.get<User[]>(`http://localhost:3000/users?email=${email}&password=${password}`);
   }
 
   addUserJson(createUser: User): Observable<boolean> {
     const url = `http://localhost:3000/users`;
     return this.http.post<boolean>(url, createUser);
+  }
+
+  getSeasonComments(): Observable<Comment[]> {
+    return this.http.get<Comment[]>(`http://localhost:3000/comments`);
   }
 }

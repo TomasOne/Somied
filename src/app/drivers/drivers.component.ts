@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { RequestService } from 'src/app//services/request.service';
 
@@ -32,7 +32,7 @@ export class DriversComponent implements OnInit {
         }
       },
       error: (error) => {
-        console.error('Error al obtener la información de las Carreras: ', error);
+        console.error('Error al obtener la información de los Pilotos: ', error);
       }
     });
   }

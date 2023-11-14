@@ -249,5 +249,25 @@
       "email": "admin@gmail.com",
       "password": "admin123"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "comment": "Viva Checo"
+    },
+    {
+      "id": "2",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "comment": "POR LA 33!"
+    },
+    {
+      "id": "3",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "comment": "Tremendo lo de Piastri"
+    }
   ]
 }

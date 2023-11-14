@@ -1,6 +1,7 @@
 import { IUser } from "./Interfaces";
 
-export class User implements IUser{
+export class User implements IUser {
+
     id: string = '';
     email: string = '';
     password: string = '';
