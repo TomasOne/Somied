@@ -1,5 +1,3 @@
-// En tu archivo Comment.ts
-
 import { IComment } from "./Interfaces";
 
 export class Comment implements IComment {

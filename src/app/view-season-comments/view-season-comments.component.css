@@ -1,5 +1,3 @@
-/* Añadir estos estilos */
-
 .comment-name {
   margin: 0;
   font-size: 16px;
@@ -14,6 +12,10 @@
 .action-buttons {
   text-align: right;
   margin-top: 10px;
+}
+
+.table-container-comment {
+  padding: 3% 0% 1% 0%;
 }
 
 .full-card {
@@ -33,7 +35,7 @@
 
 .card-content p {
   color: black;
-  margin: 0; /* Eliminar el margen predeterminado del párrafo */
+  margin: 0;
 }
 
 .div-bar {
@@ -46,21 +48,53 @@ button:hover {
   background-color: #dcc0c0;
 }
 
-.text-detail-races{
-    text-align: center;
+.text-detail-races {
+  text-align: center;
   font-size: 30px;
   margin-top: 2%;
   color: whitesmoke;
 }
+
 mat-form-field {
-  width: 100%; /* Hacer que el campo de formulario ocupe el 100% del ancho disponible */
+  width: 100%;
 }
 
 textarea {
-  width: 100%; /* Hacer que el textarea ocupe el 100% del ancho disponible */
-  resize: vertical; /* Permitir la redimensión vertical */
-  min-height: 80px; /* Altura mínima */
-  border: 1px solid #ccc; /* Añadir un borde para mejorar la apariencia */
-  padding: 8px; /* Espaciado interno */
-  font-size: 14px; /* Tamaño de fuente */
+  width: 100%;
+  resize: vertical;
+  min-height: 80px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.add-comment-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #8f87747d;
+  border-radius: 7px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #454c55;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.add-comment-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.add-comment-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-comment-container mat-form-field {
+  margin-bottom: 15px;
+}
+
+.add-comment-container button {
+  width: 100%;
 }
