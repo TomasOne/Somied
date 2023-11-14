@@ -53,6 +53,6 @@ export class RequestService {
   }
 
   getSeasonComments(): Observable<Comment[]>{
-    return this.http.get<Comment[]>(`http://localhost:3000/products`);
+    return this.http.get<Comment[]>(`http://localhost:3000/comments`);
   }
 }

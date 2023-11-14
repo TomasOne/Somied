@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Comment } from '../services/User';
+import { Comment } from '../services/Comment';
 
 @Component({
   selector: 'app-view-season-comments',
@@ -8,6 +8,5 @@ import { Comment } from '../services/User';
 })
 export class ViewSeasonCommentsComponent {
 
-  @Input() inputProducts: Array<Comment> = []
-
+  @Input() inputComments: Array<Comment> = []
 }
