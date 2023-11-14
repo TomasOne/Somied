@@ -23,6 +23,7 @@ import { MatTableModule } from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { GpDetailComponent } from './gpDetail/gpDetail.component';
+import { GpCommentComponent } from './gpComment/gpComment.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
@@ -41,6 +42,7 @@ import { RegisterComponent } from './register/register.component';
     CardsComponent,
     StandingsComponent,
     GpDetailComponent,
+    GpCommentComponent,
     DriversComponent,
     LoginComponent,
     RegisterComponent,
