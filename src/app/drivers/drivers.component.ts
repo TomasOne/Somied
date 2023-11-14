@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { RequestService } from 'src/app//services/request.service';
-import { Driver } from '../services/Driver';
 
 @Component({
   selector: 'app-drivers',
@@ -12,8 +11,6 @@ import { Driver } from '../services/Driver';
 export class DriversComponent implements OnInit {
 
   driverData: any[] = [];
-  @Input() inputDrivers: Array<Driver> = []
-  @Output() driverToEdit: EventEmitter<Driver> = new EventEmitter();
 
   constructor(private requestService: RequestService) { }
 
@@ -38,9 +35,5 @@ export class DriversComponent implements OnInit {
         console.error('Error al obtener la información de los Pilotos: ', error);
       }
     });
-  }
-
-  public editDriver(driver: Driver) {
-    this.driverToEdit.emit(driver);
   }
 }
