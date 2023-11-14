@@ -41,7 +41,6 @@ export class CardsComponent implements OnInit {
       this.router.navigate(['/gp-detail', raceID]);
     }
   }
-
   getAllRaces() {
     const observables = [];
 
