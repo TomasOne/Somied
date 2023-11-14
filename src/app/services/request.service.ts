@@ -45,4 +45,8 @@ export class RequestService {
     const url = `http://localhost:3000/users`;
     return this.http.post<boolean>(url, createUser);
   }
+
+  getRaceComments(race: number){
+    return this.http.get(`http://localhost:3000/comments/${race}`);
+  }
 }

@@ -249,5 +249,12 @@
       "email": "admin@gmail.com",
       "password": "admin123"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "raceID": "1",
+      "comment": "Viva Checo"
+    }
   ]
 }

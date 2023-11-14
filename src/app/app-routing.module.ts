@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { GpDetailComponent } from './gpDetail/gpDetail.component';
 import { StandingsComponent } from './standings/standings.component';
 import { DriversComponent } from './drivers/drivers.component';
+import { GpCommentComponent } from './gpComment/gpComment.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'gp-detail/:raceID',
     component: GpDetailComponent
+  },
+  {
+    path: 'gp-comments/:raceID',
+    component: GpCommentComponent
   },
   {
     path: 'drivers',
