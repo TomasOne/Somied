@@ -2,65 +2,59 @@
   <div class="text-detail-races">
     <h2>Last Race</h2>
   </div>
-  <!-- Se agregan la linea 7 y 8 englobando todo dentro de un ngFor y luego un ngIf, ya que se esta trabajando con un array -->
-  <!-- De esta manera, se quitan los "[0]" de la variable "lastRace", lo que provocaba un error por consola -->
-  <div *ngFor="let lastRace of lastRaceResult">
-    <div *ngIf="lastRace">
+  <mat-card class="full-card">
+    <mat-card-content class="card-content">
+      <div class="card-content-left">
+        <img mat-card-image src="../../assets/images/F1-GP_Flags/{{lastRaceResult[0].Circuit.circuitId}}.png"
+          alt="GP Flag" width="70%">
+      </div>
+      <div class="card-content-right">
+        <h2>{{ lastRaceResult[0].Circuit.circuitName }}</h2>
+        <div class="additional-info">
+          <p><strong>Round: </strong>{{ lastRaceResult[0].round }}</p>
+          <p><strong>Winner: </strong>{{ lastRaceResult[0].Results[0].Driver.givenName }}
+            {{lastRaceResult[0].Results[0].Driver.familyName }}</p>
+          <p><strong>Team: </strong>{{ lastRaceResult[0].Results[0].Constructor.name }}</p>
+          <p><strong>Final Time: </strong>{{ lastRaceResult[0].Results[0].Time.time }}</p>
+        </div>
+      </div>
+    </mat-card-content>
+    <div class="div-bar">
+      <mat-card-actions>
+        <button mat-button (click)="goToGpResults(lastRaceResult[0].round)">More Details</button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+</div>
+
+
+<div class="table-container">
+  <h2 class="text-detail-races">Season Races</h2>
+  <div *ngFor="let raceResult of seasonRaceResults">
+    <div *ngIf="raceResult">
       <mat-card class="full-card">
         <mat-card-content class="card-content">
           <div class="card-content-left">
-            <img mat-card-image src="../../assets/images/F1-GP_Flags/{{lastRace.Circuit.circuitId}}.png"
-              alt="GP Flag" width="70%">
+            <img mat-card-image src="../../assets/images/F1-GP_Flags/{{raceResult.Circuit.circuitId}}.png" alt="GP Flag"
+              width="70%">
           </div>
           <div class="card-content-right">
-            <h2>{{ lastRace.Circuit.circuitName }}</h2>
+            <h2> {{ raceResult.Circuit.circuitName }} </h2>
             <div class="additional-info">
-              <p><strong>Round: </strong>{{ lastRace.round }}</p>
-              <p><strong>Winner: </strong>{{ lastRace.Results[0].Driver.givenName }}
-                {{lastRace.Results[0].Driver.familyName }}</p>
-              <p><strong>Team: </strong>{{ lastRace.Results[0].Constructor.name }}</p>
-              <p><strong>Final Time: </strong>{{ lastRace.Results[0].Time.time }}</p>
+              <p><strong>Round: </strong> {{ raceResult.round }}</p>
+              <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }}
+                {{raceResult.Results[0].Driver.familyName }}</p>
+              <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
+              <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
             </div>
           </div>
         </mat-card-content>
         <div class="div-bar">
-          <mat-card-actions>
-            <button mat-button (click)="goToGpResults(lastRace.round)">More Details</button>
+          <mat-card-actions class="actions">
+            <button mat-button (click)="goToGpResults(lastRaceResult[0].round)">More Details</button>
           </mat-card-actions>
         </div>
       </mat-card>
-      <div *ngFor="let raceResult of seasonRaceResults">
-        <div *ngIf="raceResult">
-        </div>
-
-
-        <div class="table-container">
-          <h2 class="text-detail-races">Season Races</h2>
-          <div *ngFor="let raceResult of seasonRaceResults">
-            <div *ngIf="raceResult">
-              <mat-card class="full-card">
-                <mat-card-content class="card-content">
-                  <div class="card-content-left">
-                    <img mat-card-image src="../../assets/images/F1-GP_Flags/{{raceResult.Circuit.circuitId}}.png"
-                      alt="GP Flag" width="70%">
-                  </div>
-                  <div class="card-content-right">
-                    <h2> {{ raceResult.Circuit.circuitName }} </h2>
-                    <div class="additional-info">
-                      <p><strong>Round: </strong> {{ raceResult.round }}</p>
-                      <p><strong>Winner: </strong> {{ raceResult.Results[0].Driver.givenName }}
-                        {{raceResult.Results[0].Driver.familyName }}</p>
-                      <p><strong>Team: </strong> {{ raceResult.Results[0].Constructor.name }}</p>
-                      <p><strong>Final Time: </strong> {{ raceResult.Results[0].Time.time }}</p>
-                    </div>
-                  </div>
-                </mat-card-content>
-                <div class="div-bar">
-                  <mat-card-actions class="actions">
-                    <button mat-button (click)="goToGpResults(lastRaceResult[0].round)">More Details</button>
-                  </mat-card-actions>
-                </div>
-              </mat-card>
-            </div>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
