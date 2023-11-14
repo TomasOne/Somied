@@ -41,13 +41,7 @@ export class CardsComponent implements OnInit {
       this.router.navigate(['/gp-detail', raceID]);
     }
   }
-
-  goToGpComments(raceID: number) {
-    if (raceID) {
-      this.router.navigate(['/gp-comments', raceID]);
-    }
-  }
-
+  
   getAllRaces() {
     const observables = [];
 
