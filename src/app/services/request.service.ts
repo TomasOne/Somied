@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './User';
-import { Driver } from './Driver';
 
 @Injectable({
   providedIn: 'root'
@@ -47,12 +46,7 @@ export class RequestService {
     return this.http.post<boolean>(url, createUser);
   }
 
-  editDriver(id: number, updateDriver: Driver): Observable<boolean> {
-    const url = `http://localhost:3000/drivers/${id}`;
-    return this.http.put<boolean>(url, updateDriver);
-  }
-
-  getSeasonComments(): Observable<Comment[]>{
+  getSeasonComments(): Observable<Comment[]> {
     return this.http.get<Comment[]>(`http://localhost:3000/comments`);
   }
 }

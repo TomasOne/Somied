@@ -8,10 +8,11 @@ import { CommentService } from '../services/comment.service';
   styleUrls: ['./view-season-comments.component.css'],
 })
 export class ViewSeasonCommentsComponent {
+
   @Input() inputComments: Array<Comment> = [];
   newComment: Comment = { id: null, name: '', email: '', comment: '', editing: false };
 
-  constructor(private commentService: CommentService) {}
+  constructor(private commentService: CommentService) { }
 
   toggleEdit(index: number) {
     this.inputComments[index].editing = !this.inputComments[index].editing;

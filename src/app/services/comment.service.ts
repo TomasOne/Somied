@@ -7,9 +7,10 @@ import { Comment } from '../services/Comment';
   providedIn: 'root',
 })
 export class CommentService {
+  
   private apiUrl = 'http://localhost:3000/comments';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getComments(): Observable<Comment[]> {
     return this.http.get<Comment[]>(this.apiUrl);

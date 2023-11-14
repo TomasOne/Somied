@@ -1,7 +1,7 @@
 .example-spacer {
-    flex: 1 1 auto;
-    
-  }
+  flex: 1 1 auto;
+
+}
 
 mat-toolbar {
   background-color: #e10600;
@@ -13,11 +13,11 @@ mat-toolbar span {
   font-size: 24px;
 }
 
-mat-toolbar span:hover{
+mat-toolbar span:hover {
   color: black;
 }
 
-img{
+img {
   width: 50px;
   margin-top: 2px;
 }
@@ -47,6 +47,7 @@ button.mat-icon-button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 }
+
 .custom-button:hover {
   background-color: gray;
 }

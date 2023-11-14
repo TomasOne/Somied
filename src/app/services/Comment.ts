@@ -1,6 +1,7 @@
 import { IComment } from "./Interfaces";
 
 export class Comment implements IComment {
+    
     id: number | null = null;
     name: string = '';
     email: string = '';
@@ -8,6 +9,7 @@ export class Comment implements IComment {
     editing?: boolean = false;
 
     constructor(comment?: any) {
+
         this.id = comment == undefined ? null : comment.id;
         this.name = comment == undefined ? '' : comment.name;
         this.email = comment == undefined ? '' : comment.email;
