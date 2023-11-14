@@ -26,7 +26,6 @@ import { GpDetailComponent } from './gpDetail/gpDetail.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
-import { EditDriverComponent } from './edit-driver/edit-driver.component';
 import { ViewSeasonCommentsComponent } from './view-season-comments/view-season-comments.component';
 
 
@@ -46,7 +45,6 @@ import { ViewSeasonCommentsComponent } from './view-season-comments/view-season-
     DriversComponent,
     LoginComponent,
     RegisterComponent,
-    EditDriverComponent,
     ViewSeasonCommentsComponent,
   ],
   imports: [
