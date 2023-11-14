@@ -59,3 +59,13 @@ h2 {
   margin: 0;
   padding-top: 5px;
 }
+
+.div-bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color:  #ffefc3;
+}
+
+button:hover {
+  background-color: #ccc;
+}

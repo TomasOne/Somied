@@ -1,0 +1,11 @@
+<div class="table-container-last-race">
+    <h2 class="text-detail-races">Last Race</h2>
+    <div *ngFor="let comment of inputComments">
+        <mat-card class="full-card">
+            <mat-card-content class="card-content">
+                <p><strong>Name: </strong>{{ comment.name }}</p>
+                <p><strong>Comment: </strong>{{ comment.comment }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

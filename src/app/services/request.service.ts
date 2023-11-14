@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './User';
+import { Driver } from './Driver';
 
 @Injectable({
   providedIn: 'root'
@@ -33,11 +34,11 @@ export class RequestService {
     return this.http.get(`http://localhost:3000/drivers/${id}`);
   }
 
-  getUsersJson(){
+  getUsersJson() {
     return this.http.get(`http://localhost:3000/users`);
   }
 
-  getUserToAuth(email:string, password: string): Observable<User[]>{
+  getUserToAuth(email: string, password: string): Observable<User[]> {
     return this.http.get<User[]>(`http://localhost:3000/users?email=${email}&password=${password}`);
   }
 
@@ -46,7 +47,12 @@ export class RequestService {
     return this.http.post<boolean>(url, createUser);
   }
 
-  getRaceComments(race: number){
-    return this.http.get(`http://localhost:3000/comments/${race}`);
+  editDriver(id: number, updateDriver: Driver): Observable<boolean> {
+    const url = `http://localhost:3000/drivers/${id}`;
+    return this.http.put<boolean>(url, updateDriver);
+  }
+
+  getSeasonComments(): Observable<Comment[]>{
+    return this.http.get<Comment[]>(`http://localhost:3000/products`);
   }
 }
