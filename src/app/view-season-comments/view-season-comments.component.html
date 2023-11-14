@@ -5,10 +5,10 @@
     <div *ngFor="let comment of inputComments; let i = index">
         <mat-card class="full-card">
             <mat-card-content class="card-content">
-                <p><strong>Name: </strong>{{ comment.name }}</p>
+                <div class="user"><p><strong></strong>{{ comment.name }}</p></div>
                 <br>
                 <ng-container *ngIf="!comment.editing; else editMode">
-                    <p><strong>Comment: </strong>{{ comment.comment }}</p>
+                    <p><strong></strong>{{ comment.comment }}</p>
                 </ng-container>
                 <ng-template #editMode>
                     <form (submit)="saveEdit(i)">

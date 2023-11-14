@@ -1,50 +1,62 @@
-/* En tu archivo view-season-comments.component.css */
-
-.table-container-last-race {
-
-  }
-  
-  .text-detail-races {
-    color: white;
-  }
-  
-  .full-card {
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-content {
-    padding: 15px; /* Aumentamos el padding para más espacio interno */
-    background-color: #212529; /* Fondo blanco para resaltar */
-    border-radius: 8px;
-    color: white;
-  }
-  
-  /* Estilo opcional para resaltar el nombre del comentario */
-  .card-content p strong {
-    color: #e10600; /* Color azul, puedes cambiarlo según tus preferencias */
-    transition: transform 0.3s ease-in-out;
-  }
-  .full-card:hover, .card-content:hover {
-    transform: scale(1.02);
-}
-button {
-    margin-right: 5px;
+/* Estilo para encabezados h2 */
+h2 {
+  text-align: center;
+  font-size: 30px;
 }
 
-button[color="primary"] {
-    background-color: #e10600; /* Color primario azul */
-    color: white;
+/* Estilo para contenedor de tabla de comentarios */
+.table-container-comments {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1%;
 }
 
-button[color="warn"] {
-    background-color: #dc3545; /* Color de advertencia rojo */
-    color: white; /* Texto blanco para mayor contraste */
-}
-
+/* Estilo para texto de detalles de carreras */
 .text-detail-races {
-    color: white; /* Color azul primario */
-    font-size: 24px;
-    margin-bottom: 15px;
+  margin-top: 2%;
+  color: whitesmoke;
+}
+
+/* Estilo para contenedor de tabla general */
+.table-container {
+  max-width: 85%;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+/* Estilo para tarjeta completa */
+.full-card {
+  width: 60%;
+  margin: 2% 5% 3% 20%;
+  border: 2px solid #0073b1;
+  border-radius: 7px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+/* Estilo para el contenido de la tarjeta */
+.card-content {
+  overflow-y: hidden;
+  background-color: #ffefc3;
+  text-align: center;
+}
+
+/* Estilo para el texto dentro del contenido de la tarjeta */
+.card-content p {
+  color: black;
+}
+
+/* Estilo para la barra en la parte inferior de la tarjeta */
+.div-bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #0073b1;
+}
+
+/* Estilo para el botón en el estado de hover */
+button:hover {
+  background-color: #ccc;
+}
+.user{
+  text-align: left;
 }
